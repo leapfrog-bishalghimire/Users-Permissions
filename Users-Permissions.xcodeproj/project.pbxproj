@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD17101F196BE37600BCB83C /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD17101E196BE37600BCB83C /* CoreAudio.framework */; };
+		CD171023196C03C600BCB83C /* MicButtonImage_disable.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171021196C03C600BCB83C /* MicButtonImage_disable.png */; };
+		CD171024196C03C600BCB83C /* MicButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CD171022196C03C600BCB83C /* MicButtonImage.png */; };
 		CD1CC8D0196BBD9400D0F94B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8CF196BBD9400D0F94B /* Foundation.framework */; };
 		CD1CC8D2196BBD9400D0F94B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8D1196BBD9400D0F94B /* CoreGraphics.framework */; };
 		CD1CC8D4196BBD9400D0F94B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8D3196BBD9400D0F94B /* UIKit.framework */; };
@@ -15,13 +18,15 @@
 		CD1CC8E0196BBD9400D0F94B /* BGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CC8DF196BBD9400D0F94B /* BGAppDelegate.m */; };
 		CD1CC8E3196BBD9400D0F94B /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1CC8E1196BBD9400D0F94B /* Main_iPhone.storyboard */; };
 		CD1CC8E6196BBD9400D0F94B /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD1CC8E4196BBD9400D0F94B /* Main_iPad.storyboard */; };
-		CD1CC8E9196BBD9400D0F94B /* BGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CC8E8196BBD9400D0F94B /* BGViewController.m */; };
+		CD1CC8E9196BBD9400D0F94B /* BGPrePermissionDialogsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CC8E8196BBD9400D0F94B /* BGPrePermissionDialogsVC.m */; };
 		CD1CC8EB196BBD9400D0F94B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD1CC8EA196BBD9400D0F94B /* Images.xcassets */; };
 		CD1CC8F2196BBD9400D0F94B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8F1196BBD9400D0F94B /* XCTest.framework */; };
 		CD1CC8F3196BBD9400D0F94B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8CF196BBD9400D0F94B /* Foundation.framework */; };
 		CD1CC8F4196BBD9400D0F94B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD1CC8D3196BBD9400D0F94B /* UIKit.framework */; };
 		CD1CC8FC196BBD9400D0F94B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD1CC8FA196BBD9400D0F94B /* InfoPlist.strings */; };
 		CD1CC8FE196BBD9400D0F94B /* Users_PermissionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CC8FD196BBD9400D0F94B /* Users_PermissionsTests.m */; };
+		CD1CC90B196BC13A00D0F94B /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1CC90A196BC13A00D0F94B /* UIAlertView+Blocks.m */; };
+		CD7F4EA1196BDD6700D28995 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7F4EA0196BDD6700D28995 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD17101E196BE37600BCB83C /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		CD171021196C03C600BCB83C /* MicButtonImage_disable.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicButtonImage_disable.png; sourceTree = "<group>"; };
+		CD171022196C03C600BCB83C /* MicButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MicButtonImage.png; sourceTree = "<group>"; };
 		CD1CC8CC196BBD9400D0F94B /* Users-Permissions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Users-Permissions.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1CC8CF196BBD9400D0F94B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CD1CC8D1196BBD9400D0F94B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,14 +55,17 @@
 		CD1CC8DF196BBD9400D0F94B /* BGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGAppDelegate.m; sourceTree = "<group>"; };
 		CD1CC8E2196BBD9400D0F94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		CD1CC8E5196BBD9400D0F94B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		CD1CC8E7196BBD9400D0F94B /* BGViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGViewController.h; sourceTree = "<group>"; };
-		CD1CC8E8196BBD9400D0F94B /* BGViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGViewController.m; sourceTree = "<group>"; };
+		CD1CC8E7196BBD9400D0F94B /* BGPrePermissionDialogsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGPrePermissionDialogsVC.h; sourceTree = "<group>"; };
+		CD1CC8E8196BBD9400D0F94B /* BGPrePermissionDialogsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGPrePermissionDialogsVC.m; sourceTree = "<group>"; };
 		CD1CC8EA196BBD9400D0F94B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CD1CC8F0196BBD9400D0F94B /* Users-PermissionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Users-PermissionsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1CC8F1196BBD9400D0F94B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CD1CC8F9196BBD9400D0F94B /* Users-PermissionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Users-PermissionsTests-Info.plist"; sourceTree = "<group>"; };
 		CD1CC8FB196BBD9400D0F94B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CD1CC8FD196BBD9400D0F94B /* Users_PermissionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Users_PermissionsTests.m; sourceTree = "<group>"; };
+		CD1CC909196BC13A00D0F94B /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
+		CD1CC90A196BC13A00D0F94B /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		CD7F4EA0196BDD6700D28995 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +73,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD17101F196BE37600BCB83C /* CoreAudio.framework in Frameworks */,
+				CD7F4EA1196BDD6700D28995 /* AVFoundation.framework in Frameworks */,
 				CD1CC8D2196BBD9400D0F94B /* CoreGraphics.framework in Frameworks */,
 				CD1CC8D4196BBD9400D0F94B /* UIKit.framework in Frameworks */,
 				CD1CC8D0196BBD9400D0F94B /* Foundation.framework in Frameworks */,
@@ -81,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD171020196C03AE00BCB83C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD171021196C03C600BCB83C /* MicButtonImage_disable.png */,
+				CD171022196C03C600BCB83C /* MicButtonImage.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CD1CC8C3196BBD9400D0F94B = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +125,8 @@
 		CD1CC8CE196BBD9400D0F94B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD17101E196BE37600BCB83C /* CoreAudio.framework */,
+				CD7F4EA0196BDD6700D28995 /* AVFoundation.framework */,
 				CD1CC8CF196BBD9400D0F94B /* Foundation.framework */,
 				CD1CC8D1196BBD9400D0F94B /* CoreGraphics.framework */,
 				CD1CC8D3196BBD9400D0F94B /* UIKit.framework */,
@@ -114,12 +138,10 @@
 		CD1CC8D5196BBD9400D0F94B /* Users-Permissions */ = {
 			isa = PBXGroup;
 			children = (
-				CD1CC8DE196BBD9400D0F94B /* BGAppDelegate.h */,
-				CD1CC8DF196BBD9400D0F94B /* BGAppDelegate.m */,
-				CD1CC8E1196BBD9400D0F94B /* Main_iPhone.storyboard */,
-				CD1CC8E4196BBD9400D0F94B /* Main_iPad.storyboard */,
-				CD1CC8E7196BBD9400D0F94B /* BGViewController.h */,
-				CD1CC8E8196BBD9400D0F94B /* BGViewController.m */,
+				CD171020196C03AE00BCB83C /* Resources */,
+				CD1CC907196BC13A00D0F94B /* External */,
+				CD1CC8E7196BBD9400D0F94B /* BGPrePermissionDialogsVC.h */,
+				CD1CC8E8196BBD9400D0F94B /* BGPrePermissionDialogsVC.m */,
 				CD1CC8EA196BBD9400D0F94B /* Images.xcassets */,
 				CD1CC8D6196BBD9400D0F94B /* Supporting Files */,
 			);
@@ -131,6 +153,10 @@
 			children = (
 				CD1CC8D7196BBD9400D0F94B /* Users-Permissions-Info.plist */,
 				CD1CC8D8196BBD9400D0F94B /* InfoPlist.strings */,
+				CD1CC8DE196BBD9400D0F94B /* BGAppDelegate.h */,
+				CD1CC8DF196BBD9400D0F94B /* BGAppDelegate.m */,
+				CD1CC8E1196BBD9400D0F94B /* Main_iPhone.storyboard */,
+				CD1CC8E4196BBD9400D0F94B /* Main_iPad.storyboard */,
 				CD1CC8DB196BBD9400D0F94B /* main.m */,
 				CD1CC8DD196BBD9400D0F94B /* Users-Permissions-Prefix.pch */,
 			);
@@ -153,6 +179,23 @@
 				CD1CC8FA196BBD9400D0F94B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD1CC907196BC13A00D0F94B /* External */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CC908196BC13A00D0F94B /* UIAlertBlocks */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		CD1CC908196BC13A00D0F94B /* UIAlertBlocks */ = {
+			isa = PBXGroup;
+			children = (
+				CD1CC909196BC13A00D0F94B /* UIAlertView+Blocks.h */,
+				CD1CC90A196BC13A00D0F94B /* UIAlertView+Blocks.m */,
+			);
+			path = UIAlertBlocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +277,9 @@
 				CD1CC8E6196BBD9400D0F94B /* Main_iPad.storyboard in Resources */,
 				CD1CC8EB196BBD9400D0F94B /* Images.xcassets in Resources */,
 				CD1CC8E3196BBD9400D0F94B /* Main_iPhone.storyboard in Resources */,
+				CD171023196C03C600BCB83C /* MicButtonImage_disable.png in Resources */,
 				CD1CC8DA196BBD9400D0F94B /* InfoPlist.strings in Resources */,
+				CD171024196C03C600BCB83C /* MicButtonImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD1CC8E9196BBD9400D0F94B /* BGViewController.m in Sources */,
+				CD1CC8E9196BBD9400D0F94B /* BGPrePermissionDialogsVC.m in Sources */,
+				CD1CC90B196BC13A00D0F94B /* UIAlertView+Blocks.m in Sources */,
 				CD1CC8DC196BBD9400D0F94B /* main.m in Sources */,
 				CD1CC8E0196BBD9400D0F94B /* BGAppDelegate.m in Sources */,
 			);
@@ -470,6 +516,7 @@
 				CD1CC903196BBD9400D0F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD1CC904196BBD9400D0F94B /* Build configuration list for PBXNativeTarget "Users-PermissionsTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +525,7 @@
 				CD1CC906196BBD9400D0F94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
